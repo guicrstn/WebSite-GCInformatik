@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { cn } from "@/WebSite-GCInformatik/lib/utils"
-import { Button } from "@/WebSite-GCInformatik/components/ui/button"
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,8 +11,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/WebSite-GCInformatik/components/ui/navigation-menu"
-import { Sheet, SheetContent, SheetTrigger } from "@/WebSite-GCInformatik/components/ui/sheet"
+} from "@/components/ui/navigation-menu"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, X, Monitor, Server, Wrench } from "lucide-react"
 
 const informatiqueSections = [

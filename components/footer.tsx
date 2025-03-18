@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { Mail, MapPin, Phone, Facebook, Instagram, Linkedin } from "lucide-react"
-import { Button } from "@/WebSite-GCInformatik/components/ui/button"
+import { Mail, MapPin, Phone, Facebook, Instagram, Linkedin } from 'lucide-react'
+import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 text-sm text-muted-foreground">
-              Votre partenaire informatique de confiance pour le dépannage, l'installation et la création de sites web.
+              Votre partenaire informatique de confiance pour le dépannage, l&apos;installation et la création de sites web.
             </p>
             <div className="mt-6 flex space-x-4">
               <Button
@@ -159,4 +159,3 @@ export default function Footer() {
     </footer>
   )
 }
-

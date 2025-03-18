@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/WebSite-GCInformatik/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/WebSite-GCInformatik/components/ui/card"
-import { Monitor, Laptop, Database, Settings } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Monitor, Laptop, Database, Settings } from 'lucide-react'
 
 export default function InstallationPage() {
   return (
@@ -39,7 +39,7 @@ export default function InstallationPage() {
                 Des installations sur mesure pour vos besoins
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                GC Informatik vous accompagne dans l'installation et la configuration de votre matériel informatique.
+                GC Informatik vous accompagne dans l&apos;installation et la configuration de votre matériel informatique.
               </p>
               <p className="mt-4 text-muted-foreground">
                 Nous vous proposons des solutions adaptées à vos besoins, que ce soit pour un usage personnel ou
@@ -57,7 +57,7 @@ export default function InstallationPage() {
       <section className="bg-gray-50 py-16 dark:bg-gray-900 md:py-24">
         <div className="container">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Nos services d'installation</h2>
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Nos services d&apos;installation</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
               Des solutions complètes pour tous vos équipements
             </p>
@@ -73,7 +73,7 @@ export default function InstallationPage() {
               <CardContent>
                 <p className="text-muted-foreground">
                   Nous assemblons, installons et configurons votre PC fixe selon vos besoins spécifiques. Nous nous
-                  occupons de l'installation du système d'exploitation et des logiciels essentiels.
+                  occupons de l&apos;installation du système d&apos;exploitation et des logiciels essentiels.
                 </p>
               </CardContent>
             </Card>
@@ -125,4 +125,3 @@ export default function InstallationPage() {
     </div>
   )
 }
-

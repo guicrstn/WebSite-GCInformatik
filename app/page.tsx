@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
-import { Button } from "@/WebSite-GCInformatik/components/ui/button"
-import { Monitor, Server, Wrench, Globe, CheckCircle, Shield, Zap, Phone } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Monitor, Server, Wrench, Globe, CheckCircle, Shield, Zap, Phone } from 'lucide-react'
 
 export default function Home() {
   // Fonction pour forcer la redirection
@@ -195,7 +195,7 @@ export default function Home() {
                 <ul className="mt-4 space-y-2 text-sm">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-primary" />
-                    <span>Installation réseau d'entreprise</span>
+                    <span>Installation réseau d&apos;entreprise</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="h-4 w-4 text-primary" />
@@ -341,7 +341,7 @@ export default function Home() {
                   Prêt à démarrer votre projet ?
                 </h2>
                 <p className="mt-4 text-lg text-white/80">
-                  Contactez-nous dès aujourd'hui pour discuter de vos besoins et obtenir un devis personnalisé.
+                  Contactez-nous dès aujourd&apos;hui pour discuter de vos besoins et obtenir un devis personnalisé.
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-end">
@@ -370,4 +370,3 @@ export default function Home() {
     </div>
   )
 }
-

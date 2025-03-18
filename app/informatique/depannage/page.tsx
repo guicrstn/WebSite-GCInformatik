@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/WebSite-GCInformatik/components/ui/button"
-import { Card, CardContent } from "@/WebSite-GCInformatik/components/ui/card"
-import { HardDrive, Shield, Cpu, Wrench, ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { HardDrive, Shield, Cpu, Wrench, ArrowRight } from 'lucide-react'
 
 export default function DepannagePage() {
   return (
@@ -88,7 +88,7 @@ export default function DepannagePage() {
                 </div>
                 <h3 className="mt-4 text-xl font-bold">Réinstallation du système</h3>
                 <p className="mt-2 text-muted-foreground">
-                  Nous réinstallons votre système d'exploitation (Windows, macOS, Linux) tout en préservant vos données
+                  Nous réinstallons votre système d&apos;exploitation (Windows, macOS, Linux) tout en préservant vos données
                   importantes. Une solution idéale pour les ordinateurs lents ou instables.
                 </p>
                 <Button
@@ -136,7 +136,7 @@ export default function DepannagePage() {
                 <h3 className="mt-4 text-xl font-bold">Remplacement de disque dur</h3>
                 <p className="mt-2 text-muted-foreground">
                   Nous remplaçons votre disque dur défectueux ou obsolète par un nouveau modèle plus performant (SSD),
-                  tout en transférant vos données et en réinstallant votre système d'exploitation.
+                  tout en transférant vos données et en réinstallant votre système d&apos;exploitation.
                 </p>
                 <Button
                   asChild
@@ -210,4 +210,3 @@ export default function DepannagePage() {
     </div>
   )
 }
-

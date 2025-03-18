@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/WebSite-GCInformatik/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/WebSite-GCInformatik/components/ui/card"
-import { Globe, Smartphone, Search, Palette } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Globe, Smartphone, Search, Palette } from 'lucide-react'
 
 export default function SiteWebPage() {
   return (
@@ -83,7 +83,7 @@ export default function SiteWebPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Tous nos sites sont conçus avec une approche "mobile-first" pour garantir une expérience utilisateur
+                  Tous nos sites sont conçus avec une approche &quot;mobile-first&quot; pour garantir une expérience utilisateur
                   optimale sur tous les appareils : smartphones, tablettes et ordinateurs.
                 </p>
               </CardContent>
@@ -97,7 +97,7 @@ export default function SiteWebPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Nous optimisons votre site pour les moteurs de recherche afin d'améliorer sa visibilité et d'attirer
+                  Nous optimisons votre site pour les moteurs de recherche afin d&apos;améliorer sa visibilité et d&apos;attirer
                   plus de visiteurs qualifiés vers votre entreprise.
                 </p>
               </CardContent>
@@ -111,7 +111,7 @@ export default function SiteWebPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Nous créons un design sur mesure qui reflète l'identité de votre entreprise, avec une attention
+                  Nous créons un design sur mesure qui reflète l&apos;identité de votre entreprise, avec une attention
                   particulière aux détails pour un résultat professionnel et attrayant.
                 </p>
               </CardContent>
@@ -171,6 +171,3 @@ export default function SiteWebPage() {
     </div>
   )
 }
-
-// Vérifiez que cette page existe et est correctement configurée
-

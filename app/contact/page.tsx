@@ -6,12 +6,12 @@ import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
-import { Button } from "@/WebSite-GCInformatik/components/ui/button"
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/WebSite-GCInformatik/components/ui/form"
-import { Input } from "@/WebSite-GCInformatik/components/ui/input"
-import { Textarea } from "@/WebSite-GCInformatik/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/WebSite-GCInformatik/components/ui/select"
-import { Mail, MapPin, Phone, Facebook, Instagram, Linkedin, Send, CheckCircle } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Mail, MapPin, Phone, Facebook, Instagram, Linkedin, Send, CheckCircle } from 'lucide-react'
 import { useToast } from "@/hooks/use-toast"
 
 const formSchema = z.object({
@@ -64,7 +64,7 @@ export default function ContactPage() {
   })
 
   // Fonction pour gérer le formatage du téléphone pendant la saisie
-  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>, onChange: (...event: any[]) => void) => {
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>, onChange: (value: string) => void) => {
     const value = e.target.value
     const formattedValue = formatPhoneNumber(value)
     onChange(formattedValue)
@@ -110,29 +110,6 @@ export default function ContactPage() {
     } finally {
       setIsSubmitting(false)
     }
-
-    const { typeDemande } = values
-
-    // Obtenir le libellé du type de demande
-    let typeDemandeLibelle = "Non spécifié"
-    let typeDemandeIcon = "❓"
-
-    if (typeDemande === "informatique") {
-      typeDemandeLibelle = "Service Informatique"
-      typeDemandeIcon = "💻"
-    }
-    if (typeDemande === "siteweb") {
-      typeDemandeLibelle = "Développement de Site Web"
-      typeDemandeIcon = "🌐"
-    }
-    if (typeDemande === "devis") {
-      typeDemandeLibelle = "Demande de devis"
-      typeDemandeIcon = "💰"
-    }
-    if (typeDemande === "autre") {
-      typeDemandeLibelle = "Autre demande"
-      typeDemandeIcon = "📋"
-    }
   }
 
   return (
@@ -147,7 +124,7 @@ export default function ContactPage() {
           </div>
           <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Contactez-nous</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            Vous avez une question ou un projet ? N'hésitez pas à nous contacter. Nous vous répondrons dans les plus
+            Vous avez une question ou un projet ? N&apos;hésitez pas à nous contacter. Nous vous répondrons dans les plus
             brefs délais.
           </p>
         </div>
@@ -159,7 +136,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-2xl font-bold">Nos coordonnées</h2>
               <p className="mt-4 text-muted-foreground">
-                N'hésitez pas à nous contacter par téléphone, email ou en remplissant le formulaire ci-contre.
+                N&apos;hésitez pas à nous contacter par téléphone, email ou en remplissant le formulaire ci-contre.
               </p>
 
               <div className="mt-8 space-y-6">
@@ -417,4 +394,3 @@ export default function ContactPage() {
     </div>
   )
 }
-

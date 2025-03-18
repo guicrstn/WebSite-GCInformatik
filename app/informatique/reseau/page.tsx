@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/WebSite-GCInformatik/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/WebSite-GCInformatik/components/ui/card"
-import { Network, Server, Lock, Wifi } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Network, Server, Lock, Wifi } from 'lucide-react'
 
 export default function ReseauPage() {
   return (
@@ -32,7 +32,7 @@ export default function ReseauPage() {
                 Des solutions réseau adaptées aux entreprises
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                GC Informatik vous propose des services d'installation et de configuration de réseaux informatiques pour
+                GC Informatik vous propose des services d&apos;installation et de configuration de réseaux informatiques pour
                 les professionnels.
               </p>
               <p className="mt-4 text-muted-foreground">
@@ -69,12 +69,12 @@ export default function ReseauPage() {
             <Card className="transition-all hover:shadow-md">
               <CardHeader>
                 <Network className="h-10 w-10 text-primary" />
-                <CardTitle className="mt-4">Installation réseau d'entreprise</CardTitle>
-                <CardDescription>Mise en place d'infrastructures complètes</CardDescription>
+                <CardTitle className="mt-4">Installation réseau d&apos;entreprise</CardTitle>
+                <CardDescription>Mise en place d&apos;infrastructures complètes</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Nous concevons et installons des réseaux d'entreprise complets, incluant le câblage, les équipements
+                  Nous concevons et installons des réseaux d&apos;entreprise complets, incluant le câblage, les équipements
                   actifs et la configuration des services réseau essentiels à votre activité.
                 </p>
               </CardContent>
@@ -117,7 +117,7 @@ export default function ReseauPage() {
               <CardContent>
                 <p className="text-muted-foreground">
                   Nous mettons en place des solutions de sécurité réseau adaptées à vos besoins : pare-feu, VPN,
-                  segmentation réseau, contrôle d'accès et surveillance pour protéger vos données sensibles.
+                  segmentation réseau, contrôle d&apos;accès et surveillance pour protéger vos données sensibles.
                 </p>
               </CardContent>
             </Card>
@@ -127,4 +127,3 @@ export default function ReseauPage() {
     </div>
   )
 }
-

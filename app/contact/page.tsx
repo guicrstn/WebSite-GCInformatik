@@ -172,7 +172,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium">Adresse</h3>
-                    <p className="mt-1 text-muted-foreground">255 route de talour, 01100 MARTIGNAT, France</p>
+                    <p className="mt-1 text-muted-foreground">Auvergne Rhones-Alpes, France</p>
                     <p className="mt-1 text-sm text-muted-foreground">Intervention dans toute la région</p>
                   </div>
                 </div>

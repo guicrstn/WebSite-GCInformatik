@@ -153,7 +153,7 @@ export default function SiteWebPage() {
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="group relative overflow-hidden rounded-lg">
               <Image
-                src="/logo.png"
+                src="/logo.jpeg"
                 alt="Taxi-Dumoulin"
                 width={800}
                 height={600}

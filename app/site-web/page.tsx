@@ -149,6 +149,26 @@ export default function SiteWebPage() {
                 </Button>
               </div>
             </div>
+  
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="group relative overflow-hidden rounded-lg">
+              <Image
+                src="/logo.png"
+                alt="Taxi-Dumoulin"
+                width={800}
+                height={600}
+                className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <h3 className="text-xl font-bold text-white">Taxi-Dumoulin</h3>
+                <p className="mt-2 text-sm text-gray-200">Taxi - Nantua</p>
+                <Button asChild variant="default" className="mt-4 bg-white text-primary hover:bg-white/90 font-medium">
+                  <Link href="https://taxi-dumoulin.com" target="_blank" rel="noopener noreferrer">
+                    Visiter le site
+                  </Link>
+                </Button>
+              </div>
+            </div>
 
             {/* Placeholder for future projects */}
             <div className="relative overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">

@@ -13,7 +13,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, X, Monitor, Server, Wrench } from "lucide-react"
+import { Menu, X, ChevronDown, Monitor, Server, Wrench } from "lucide-react"
 
 const informatiqueSections = [
   {
@@ -39,12 +39,8 @@ const informatiqueSections = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [mounted, setMounted] = useState(false)
 
-  // Utiliser useEffect pour s'assurer que le code ne s'exécute que côté client
   useEffect(() => {
-    setMounted(true)
-
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10
       if (isScrolled !== scrolled) {
@@ -52,35 +48,26 @@ export default function Navbar() {
       }
     }
 
-    // Vérifier la position initiale du défilement
-    handleScroll()
-
     window.addEventListener("scroll", handleScroll)
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [scrolled])
 
-  // Déterminer les classes à utiliser pour l'en-tête
-  const headerClasses = cn(
-    "sticky top-0 z-50 w-full transition-all duration-300",
-    // Utiliser une classe par défaut pour le rendu côté serveur
-    !mounted
-      ? "bg-transparent"
-      : scrolled
-        ? "bg-white/95 backdrop-blur-md shadow-md dark:bg-gray-900/95"
-        : "bg-transparent",
-  )
-
   return (
-    <header className={headerClasses}>
+    <header
+      className={cn(
+        "sticky top-0 z-50 w-full transition-all duration-300",
+        scrolled ? "bg-white/95 backdrop-blur-md shadow-md dark:bg-gray-900/95" : "bg-transparent",
+      )}
+    >
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <div className="relative h-10 w-10 overflow-hidden rounded-full bg-gradient-to-br from-primary to-primary-light">
             <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">GC</div>
           </div>
-          <span className="font-bold text-xl bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-            Informatik
+          <span className="hidden font-bold text-xl bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent sm:inline-block">
+            GC Informatik
           </span>
         </Link>
 
@@ -88,22 +75,24 @@ export default function Navbar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={cn(
-                      "group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors",
-                      "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none",
-                      "data-[active]:bg-accent/50 data-[state=open]:bg-accent/50",
-                    )}
-                  >
-                    Accueil
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink
+                  asChild
+                  className={cn(
+                    "group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors",
+                    "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none",
+                    "data-[active]:bg-accent/50 data-[state=open]:bg-accent/50",
+                  )}
+                >
+                  <Link href="/">Accueil</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="group">
-                  <span className="flex items-center gap-1">Informatique</span>
+                  <span className="flex items-center gap-1">
+                    Informatique
+                    <ChevronDown className="h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
+                  </span>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px]">
@@ -132,31 +121,29 @@ export default function Navbar() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/site-web" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={cn(
-                      "group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors",
-                      "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none",
-                      "data-[active]:bg-accent/50 data-[state=open]:bg-accent/50",
-                    )}
-                  >
-                    Site Web
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink
+                  asChild
+                  className={cn(
+                    "group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors",
+                    "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none",
+                    "data-[active]:bg-accent/50 data-[state=open]:bg-accent/50",
+                  )}
+                >
+                  <Link href="/site-web">Site Web</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/contact" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={cn(
-                      "group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors",
-                      "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none",
-                      "data-[active]:bg-accent/50 data-[state=open]:bg-accent/50",
-                    )}
-                  >
-                    Contact
-                  </NavigationMenuLink>
-                </Link>
+                <NavigationMenuLink
+                  asChild
+                  className={cn(
+                    "group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors",
+                    "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none",
+                    "data-[active]:bg-accent/50 data-[state=open]:bg-accent/50",
+                  )}
+                >
+                  <Link href="/contact">Contact</Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -165,7 +152,7 @@ export default function Navbar() {
         <div className="hidden lg:block">
           <Button
             asChild
-            className="bg-primary text-white hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/20 font-medium"
+            className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary transition-all duration-300 shadow-lg hover:shadow-primary/20"
           >
             <Link href="/contact">Demander un devis</Link>
           </Button>
@@ -224,7 +211,7 @@ export default function Navbar() {
 
               <Button
                 asChild
-                className="mt-4 bg-primary text-white hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-primary/20 font-medium"
+                className="mt-4 bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary transition-all duration-300 shadow-lg hover:shadow-primary/20"
               >
                 <Link href="/contact" onClick={() => setIsOpen(false)}>
                   Demander un devis
@@ -237,4 +224,3 @@ export default function Navbar() {
     </header>
   )
 }
-

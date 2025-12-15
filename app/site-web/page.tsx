@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Globe, Smartphone, Search, Palette } from 'lucide-react'
+import { Globe, Smartphone, Search, Palette } from "lucide-react"
 
 export default function SiteWebPage() {
   return (
@@ -83,8 +83,8 @@ export default function SiteWebPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Tous nos sites sont conçus avec une approche &quot;mobile-first&quot; pour garantir une expérience utilisateur
-                  optimale sur tous les appareils : smartphones, tablettes et ordinateurs.
+                  Tous nos sites sont conçus avec une approche &quot;mobile-first&quot; pour garantir une expérience
+                  utilisateur optimale sur tous les appareils : smartphones, tablettes et ordinateurs.
                 </p>
               </CardContent>
             </Card>
@@ -97,8 +97,8 @@ export default function SiteWebPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Nous optimisons votre site pour les moteurs de recherche afin d&apos;améliorer sa visibilité et d&apos;attirer
-                  plus de visiteurs qualifiés vers votre entreprise.
+                  Nous optimisons votre site pour les moteurs de recherche afin d&apos;améliorer sa visibilité et
+                  d&apos;attirer plus de visiteurs qualifiés vers votre entreprise.
                 </p>
               </CardContent>
             </Card>
@@ -149,8 +149,7 @@ export default function SiteWebPage() {
                 </Button>
               </div>
             </div>
-  
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
             <div className="group relative overflow-hidden rounded-lg">
               <Image
                 src="/logo.png"

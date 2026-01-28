@@ -23,7 +23,7 @@ export default function MentionsLegalesPage() {
                   <strong>Siège social :</strong> 255 route de talour, 01100 MARTIGNAT, France
                 </p>
                 <p>
-                  <strong>Téléphone :</strong> +33 (0)X XX XX XX XX
+                  <strong>Téléphone :</strong> +33 (0)6 07 41 31 11
                 </p>
                 <p>
                   <strong>Email :</strong> contact@gcinformatik.fr

@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">GC</div>
               </div>
               <span className="font-bold text-xl bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-                GC Informatik
+                Informatik
               </span>
             </div>
             <p className="mt-4 text-sm text-muted-foreground">

@@ -62,7 +62,7 @@ export default function Navbar() {
             <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">GC</div>
           </div>
           <span className="hidden font-bold text-xl bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent sm:inline-block">
-            GC Informatik
+            Informatik
           </span>
         </Link>
 

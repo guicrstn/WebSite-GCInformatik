@@ -171,7 +171,7 @@ export default function SiteWebPage() {
 
             <div className="group relative overflow-hidden rounded-lg">
               <Image
-                src="/logorevais.png"
+                src="/logorevais1.png"
                 alt="Revais montage"
                 width={800}
                 height={600}

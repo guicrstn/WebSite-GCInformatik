@@ -114,7 +114,7 @@ export default function DepannagePage() {
                 </div>
                 <h3 className="mt-4 text-xl font-bold">Réinstallation du système</h3>
                 <p className="mt-2 text-muted-foreground">
-                  Nous réinstallons votre système d'exploitation (Windows, macOS, Linux) tout en préservant vos données
+                  Nous réinstallons votre système d&apos;exploitation (Windows, macOS, Linux) tout en préservant vos données
                   importantes. Une solution idéale pour les ordinateurs lents ou instables.
                 </p>
                 <Button
@@ -162,7 +162,7 @@ export default function DepannagePage() {
                 <h3 className="mt-4 text-xl font-bold">Remplacement de disque dur</h3>
                 <p className="mt-2 text-muted-foreground">
                   Nous remplaçons votre disque dur défectueux ou obsolète par un nouveau modèle plus performant (SSD),
-                  tout en transférant vos données et en réinstallant votre système d'exploitation.
+                  tout en transférant vos données et en réinstallant votre système d&apos;exploitation.
                 </p>
                 <Button
                   asChild

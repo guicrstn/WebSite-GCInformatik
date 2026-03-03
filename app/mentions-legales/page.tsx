@@ -60,7 +60,7 @@ export default function MentionsLegalesPage() {
             <div>
               <h2 className="text-2xl font-bold">3. Propriété intellectuelle</h2>
               <p className="mt-4">
-                L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la
+                L&apos;ensemble de ce site relève de la législation française et internationale sur le droit d&apos;auteur et la
                 propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents
                 téléchargeables et les représentations iconographiques et photographiques.
               </p>
@@ -69,7 +69,7 @@ export default function MentionsLegalesPage() {
             <div>
               <h2 className="text-2xl font-bold">4. Liens hypertextes</h2>
               <p className="mt-4">
-                Le site GC Informatik peut contenir des liens hypertextes vers d'autres sites présents sur le réseau
+                Le site GC Informatik peut contenir des liens hypertextes vers d&apos;autres sites présents sur le réseau
                 Internet. Les liens vers ces autres ressources vous font quitter le site GC Informatik.
               </p>
             </div>

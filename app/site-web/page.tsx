@@ -1,36 +1,8 @@
-import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Globe, Smartphone, Search, Palette } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Création de Sites Web à Martignat (01) - Site Vitrine & Professionnel",
-  description:
-    "Création de sites web professionnels à Martignat et dans l'Ain. Sites vitrines, design responsive, référencement SEO, hébergement. Solutions adaptées aux entreprises et auto-entrepreneurs. Devis gratuit.",
-  keywords: [
-    "création site web Martignat",
-    "création site internet Oyonnax",
-    "développeur web Ain",
-    "site vitrine",
-    "site professionnel",
-    "design responsive",
-    "référencement SEO",
-    "hébergement web",
-    "webmaster 01",
-    "création site auto-entrepreneur",
-    "site web entreprise Ain",
-  ],
-  alternates: {
-    canonical: "https://gcinformatik.fr/site-web",
-  },
-  openGraph: {
-    title: "Création de Sites Web - GC Informatik",
-    description: "Création de sites web professionnels à Martignat (01). Sites vitrines, responsive design, SEO. Devis gratuit.",
-    url: "https://gcinformatik.fr/site-web",
-  },
-}
 
 export default function SiteWebPage() {
   return (
@@ -191,6 +163,44 @@ export default function SiteWebPage() {
                 <p className="mt-2 text-sm text-gray-200">Taxi - Nantua</p>
                 <Button asChild variant="default" className="mt-4 bg-white text-primary hover:bg-white/90 font-medium">
                   <Link href="https://taxi-dumoulin.com" target="_blank" rel="noopener noreferrer">
+                    Visiter le site
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-lg">
+              <Image
+                src="/logorevais1.png"
+                alt="Revais montage"
+                width={800}
+                height={600}
+                className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <h3 className="text-xl font-bold text-white">Revais montage</h3>
+                <p className="mt-2 text-sm text-gray-200">Revais montage - Martignat</p>
+                <Button asChild variant="default" className="mt-4 bg-white text-primary hover:bg-white/90 font-medium">
+                  <Link href="https://revais.fr" target="_blank" rel="noopener noreferrer">
+                    Visiter le site
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-lg">
+              <Image
+                src="/lefevresas.png"
+                alt="Lefevre SAS"
+                width={800}
+                height={600}
+                className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <h3 className="text-xl font-bold text-white">Lefevre SAS</h3>
+                <p className="mt-2 text-sm text-gray-200">Lefevre SAS - Dortan</p>
+                <Button asChild variant="default" className="mt-4 bg-white text-primary hover:bg-white/90 font-medium">
+                  <Link href="https://lefevresas.fr" target="_blank" rel="noopener noreferrer">
                     Visiter le site
                   </Link>
                 </Button>

@@ -11,7 +11,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Mail, MapPin, Phone, Facebook, Instagram, Linkedin, Send, CheckCircle } from 'lucide-react'
+import { Mail, MapPin, Phone, Facebook, Instagram, Linkedin, Send, CheckCircle } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 
 const formSchema = z.object({
@@ -64,7 +64,7 @@ export default function ContactPage() {
   })
 
   // Fonction pour gérer le formatage du téléphone pendant la saisie
-  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>, onChange: (value: string) => void) => {
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>, onChange: (...event: any[]) => void) => {
     const value = e.target.value
     const formattedValue = formatPhoneNumber(value)
     onChange(formattedValue)
@@ -146,7 +146,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium">Téléphone</h3>
-                    <p className="mt-1 text-muted-foreground">+33 (0)6 07 41 31 11</p>
+                    <p className="mt-1 text-muted-foreground">+33 (0)X XX XX XX XX</p>
                     <p className="mt-1 text-sm text-muted-foreground">Du lundi au vendredi, de 9h à 18h</p>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium">Adresse</h3>
-                    <p className="mt-1 text-muted-foreground">Auvergne Rhones-Alpes, France</p>
+                    <p className="mt-1 text-muted-foreground">255 route de talour, 01100 MARTIGNAT, France</p>
                     <p className="mt-1 text-sm text-muted-foreground">Intervention dans toute la région</p>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ export default function ContactPage() {
                     size="icon"
                     className="rounded-full hover:bg-primary/10 hover:text-primary"
                   >
-                    <a href="https://www.facebook.com/profile.php?id=61559089580543&sk=about" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/gcinformatik" target="_blank" rel="noopener noreferrer">
                       <Facebook className="h-5 w-5" />
                       <span className="sr-only">Facebook</span>
                     </a>
@@ -323,7 +323,6 @@ export default function ContactPage() {
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
-                              <SelectItem value="devis">Demande de devis</SelectItem>
                               <SelectItem value="informatique">Service Informatique</SelectItem>
                               <SelectItem value="siteweb">Développement de Site Web</SelectItem>
                               <SelectItem value="autre">Autre demande</SelectItem>

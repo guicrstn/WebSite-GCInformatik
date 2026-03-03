@@ -146,7 +146,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium">Téléphone</h3>
-                    <p className="mt-1 text-muted-foreground">+33 (0)X XX XX XX XX</p>
+                    <p className="mt-1 text-muted-foreground">+33 (0)6 07 41 31 11</p>
                     <p className="mt-1 text-sm text-muted-foreground">Du lundi au vendredi, de 9h à 18h</p>
                   </div>
                 </div>

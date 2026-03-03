@@ -1,34 +1,8 @@
-import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { HardDrive, Shield, Cpu, Wrench, ArrowRight } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Dépannage Informatique à Martignat (01) - Réparation PC",
-  description:
-    "Service de dépannage informatique à Martignat et alentours (Oyonnax, Bellegarde, Nantua). Réinstallation système, nettoyage virus, remplacement disque dur, récupération de données. Intervention rapide, devis gratuit.",
-  keywords: [
-    "dépannage informatique Martignat",
-    "réparation ordinateur Oyonnax",
-    "nettoyage virus Ain",
-    "réinstallation Windows",
-    "remplacement disque dur",
-    "récupération données",
-    "dépannage PC 01",
-    "réparation ordinateur portable",
-    "informaticien Ain",
-  ],
-  alternates: {
-    canonical: "https://gcinformatik.fr/informatique/depannage",
-  },
-  openGraph: {
-    title: "Dépannage Informatique - GC Informatik",
-    description: "Réparation et dépannage informatique rapide à Martignat (01). Nettoyage virus, réinstallation système, remplacement matériel.",
-    url: "https://gcinformatik.fr/informatique/depannage",
-  },
-}
+import { HardDrive, Shield, Cpu, Wrench, ArrowRight } from 'lucide-react'
 
 export default function DepannagePage() {
   return (
@@ -40,7 +14,7 @@ export default function DepannagePage() {
 
         <div className="container relative z-10 text-center">
           <div className="inline-flex items-center justify-center rounded-full bg-primary/10 px-4 py-1 text-sm font-medium text-primary">
-            Services Informatiques
+            Services Dépannage
           </div>
           <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Dépannage Informatique</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
@@ -81,7 +55,7 @@ export default function DepannagePage() {
               </div>
               <div className="relative z-10 h-full w-full rounded-2xl bg-white/80 p-6 shadow-2xl backdrop-blur-sm dark:bg-gray-900/80">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/imginstall.jpeg"
                   alt="Dépannage informatique"
                   fill
                   className="rounded-xl object-cover"

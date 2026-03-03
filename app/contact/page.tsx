@@ -64,7 +64,7 @@ export default function ContactPage() {
   })
 
   // Fonction pour gérer le formatage du téléphone pendant la saisie
-  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>, onChange: (...event: any[]) => void) => {
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>, onChange: (value: string) => void) => {
     const value = e.target.value
     const formattedValue = formatPhoneNumber(value)
     onChange(formattedValue)

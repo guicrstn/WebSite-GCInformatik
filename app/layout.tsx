@@ -80,8 +80,7 @@ export const metadata: Metadata = {
     canonical: "https://gcinformatik.fr",
   },
   verification: {
-    // Ajoutez votre code de verification Google Search Console ici
-    // google: "votre-code-verification",
+    google: "ZEf_WD-cRn_PuRyrgl4GRCEqeZoz9iO-ILVKriG4mrM",
   },
 }
 

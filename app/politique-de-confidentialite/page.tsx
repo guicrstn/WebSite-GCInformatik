@@ -59,7 +59,7 @@ export default function PolitiqueConfidentialitePage() {
             <div>
               <h2 className="text-2xl font-bold">4. Cookies</h2>
               <p className="mt-4">
-                Notre site utilise des cookies pour améliorer l'expérience utilisateur. Un cookie est un petit fichier
+                Notre site utilise des cookies pour améliorer l&apos;expérience utilisateur. Un cookie est un petit fichier
                 texte stocké sur votre ordinateur. Les cookies nous aident à analyser le trafic web et à améliorer notre
                 site en fonction des besoins des visiteurs.
               </p>
@@ -68,7 +68,7 @@ export default function PolitiqueConfidentialitePage() {
             <div>
               <h2 className="text-2xl font-bold">5. Divulgation à des tiers</h2>
               <p className="mt-4">
-                Nous ne vendons, n'échangeons et ne transférons pas vos informations personnelles identifiables à des
+                Nous ne vendons, n&apos;échangeons et ne transférons pas vos informations personnelles identifiables à des
                 tiers. Cela ne comprend pas les tierces parties de confiance qui nous aident à exploiter notre site web
                 ou à mener nos affaires, tant que ces parties conviennent de garder ces informations confidentielles.
               </p>
@@ -80,11 +80,11 @@ export default function PolitiqueConfidentialitePage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold">7. Droit d'accès et de rectification</h2>
+              <h2 className="text-2xl font-bold">7. Droit d&apos;accès et de rectification</h2>
               <p className="mt-4">
                 Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée et au Règlement européen
-                n°2016/679/UE du 27 avril 2016, vous bénéficiez d'un droit d'accès, de rectification, de portabilité et
-                d'effacement de vos données personnelles. Vous pouvez exercer ces droits en nous contactant à l'adresse
+                n°2016/679/UE du 27 avril 2016, vous bénéficiez d&apos;un droit d&apos;accès, de rectification, de portabilité et
+                d&apos;effacement de vos données personnelles. Vous pouvez exercer ces droits en nous contactant à l&apos;adresse
                 : contact@gcinformatik.fr
               </p>
             </div>
